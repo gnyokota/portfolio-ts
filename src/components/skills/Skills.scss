@@ -1,0 +1,53 @@
+@import "../../variables";
+
+#skills {
+  background-color: $background;
+  text-align: center;
+  margin: 0;
+  padding: 4rem 0;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 4rem auto;
+  row-gap: 15px;
+  width: 80%;
+
+  &__children {
+    a {
+      font-size: 5rem;
+      color: $primary;
+    }
+
+    a:hover {
+      cursor: pointer;
+      color: $secondary;
+    }
+  }
+}
+
+/* from the skillItem file  */
+
+@media screen and (max-device-width: 812px) {
+  #skills {
+    padding: 2rem 0 4rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    row-gap: 15px;
+
+    &__children {
+      a {
+        font-size: 4rem;
+      }
+    }
+  }
+}

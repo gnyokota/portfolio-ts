@@ -1,0 +1,8 @@
+@import "../../variables";
+
+#projects {
+  background-color: $dark-secondary;
+  color: $background;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+}

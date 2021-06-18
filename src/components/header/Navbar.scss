@@ -1,0 +1,99 @@
+@import "../../variables";
+/* navbar section  */
+/* changed classes using useState */
+
+#navbar {
+  background-color: $background;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+
+  &__logo {
+    text-decoration: none;
+    color: $dark-secondary;
+
+    &__title {
+      margin: 2rem;
+      font-weight: bold;
+    }
+
+    &__title:hover {
+      color: $primary;
+    }
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  &__item {
+    list-style: none;
+    padding-left: 20px;
+
+    &__link {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bolder;
+      color: $dark-secondary;
+    }
+
+    &__link:hover {
+      color: $primary;
+    }
+  }
+
+  &__drawer {
+    display: none;
+  }
+}
+
+/* breakpoint for mobile  */
+@media screen and (max-device-width: 812px) {
+  /* navbar section  */
+  .navbar {
+    &__menu {
+      display: none;
+    }
+
+    &__drawer {
+      display: inline-block;
+    }
+  }
+}
+/* breakpoint iphone 6,7 */
+@media only screen and (max-device-width: 667px) {
+  .navbar {
+    &__menu {
+      display: none;
+    }
+
+    &__icon {
+      display: flex;
+      font-size: 3rem;
+      margin: 1rem;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
