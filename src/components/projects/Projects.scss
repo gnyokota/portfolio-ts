@@ -3,6 +3,75 @@
 #projects {
   background-color: $dark-secondary;
   color: $background;
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  padding: 6rem 0.5rem;
+}
+
+.projects {
+  &__title {
+    margin: 1rem auto;
+    color: $primary;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 0.5rem auto 6rem;
+  }
+}
+
+#project {
+  display: flex;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.project {
+  &__title {
+    color: $primary;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__live {
+    border: 1px solid $primary;
+    padding: 0.5rem 2rem;
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__live:hover {
+    background-color: $primary;
+    border: $primary;
+    color: $dark-secondary;
+    transition: ease-in-out 0.5s;
+  }
+
+  &__code {
+    margin-left: 1rem;
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+  &__code:hover {
+    color: $background;
+    transition: ease-in-out 0.5s;
+  }
 }

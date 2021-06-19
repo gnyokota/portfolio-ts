@@ -37,6 +37,7 @@
 
     &__link:hover {
       color: $primary;
+      transition: ease-in-out 0.5s;
     }
 
     &__icon {
