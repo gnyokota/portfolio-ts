@@ -18,28 +18,28 @@ const Drawer = ({ handleBackdrop }: Props) => {
       <div className="drawer">
         <ul className="drawer__menu">
           <li className="drawer__item">
-            <Link to="#about" className="drawer__item__link">
+            <a href="#about" className="drawer__item__link">
               <AiOutlineHome className="drawer__item__icon" />
               About
-            </Link>
+            </a>
           </li>
           <li className="drawer__item">
-            <Link to="#expertise" className="drawer__item__link">
+            <a href="#expertise" className="drawer__item__link">
               <FaReact className="drawer__item__icon" />
               Expertise
-            </Link>
+            </a>
           </li>
           <li className="drawer__item">
-            <Link to="#projects" className="drawer__item__link">
+            <a href="#projects" className="drawer__item__link">
               <AiOutlineFundProjectionScreen className="drawer__item__icon" />
               Projects
-            </Link>
+            </a>
           </li>
           <li className="drawer__item">
-            <Link to="#contact" className="drawer__item__link">
+            <a href="#contact" className="drawer__item__link">
               <AiOutlineContacts className="drawer__item__icon" />
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

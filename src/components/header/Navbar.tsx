@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { HiViewList } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import Drawer from "./Drawer";
 
 import "./Navbar.scss";
@@ -18,29 +17,29 @@ const Navbar = () => {
   return (
     <header id="navbar">
       <nav className="navbar">
-        <Link to="#header" className="navbar__logo">
+        <a href="#profile" className="navbar__logo">
           <h1 className="navbar__logo__title">{"<GY/>"}</h1>
-        </Link>
+        </a>
         <ul className="navbar__menu">
           <li className="navbar__item">
-            <Link to="#about" className="navbar__item__link">
+            <a href="#about" className="navbar__item__link">
               About
-            </Link>
+            </a>
           </li>
           <li className="navbar__item">
-            <Link to="#expertise" className="navbar__item__link">
+            <a href="#skills" className="navbar__item__link">
               Expertise
-            </Link>
+            </a>
           </li>
           <li className="navbar__item">
-            <Link to="#projects" className="navbar__item__link">
+            <a href="#projects" className="navbar__item__link">
               Projects
-            </Link>
+            </a>
           </li>
           <li className="navbar__item">
-            <Link to="#contact" className="navbar__item__link">
+            <a href="#contact" className="navbar__item__link">
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
