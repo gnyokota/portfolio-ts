@@ -24,7 +24,7 @@ const Drawer = ({ handleBackdrop }: Props) => {
             </a>
           </li>
           <li className="drawer__item">
-            <a href="#expertise" className="drawer__item__link">
+            <a href="#skills" className="drawer__item__link">
               <FaReact className="drawer__item__icon" />
               Expertise
             </a>

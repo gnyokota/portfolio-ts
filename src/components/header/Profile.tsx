@@ -45,6 +45,7 @@ const Profile = () => {
           >
             WEB DEVELOPER
           </h2>
+          <div />
         </div>
 
         <img src={photo} alt="profile-img" className="profile__img" />

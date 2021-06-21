@@ -4,16 +4,16 @@
   background-color: $background;
   text-align: center;
   margin: 0;
-  padding: 4rem 0;
-  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
-  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  padding: 4rem 0 2rem;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 90%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 90%);
 }
 
 .skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 4rem auto;
+  margin: 4rem auto 1rem;
   row-gap: 15px;
   width: 80%;
 
@@ -34,7 +34,7 @@
 
 @media screen and (max-device-width: 812px) {
   #skills {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 rem;
   }
 
   .skills {

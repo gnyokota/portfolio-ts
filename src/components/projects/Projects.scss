@@ -3,35 +3,47 @@
 #projects {
   background-color: $dark-secondary;
   color: $background;
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  padding: 6rem 0.5rem 2rem;
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  padding: 6rem 0.5rem 4rem;
+  margin: 0;
 }
 
 .projects {
   &__title {
-    margin: 1rem auto;
+    margin: 4rem auto 1rem;
     color: $primary;
     text-align: center;
   }
 
   &__subtitle {
-    text-align: center;
     margin: 0.5rem auto 6rem;
+    text-align: center;
   }
 }
 
 #project {
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem auto 6rem;
   width: 80%;
+  justify-content: center; /* center items horizontally, in this case */
+  align-items: center;
+  align-content: center;
 }
 
 .project {
+  width: 90%;
+  flex-grow: 1;
   &__title {
     color: $primary;
     margin: 0 auto 1rem;
     font-weight: bold;
+  }
+
+  &__tech {
+    font-size: 0.9rem;
+    width: 80%;
+    margin: 1rem 0;
   }
 
   &__subtitle {
@@ -41,15 +53,16 @@
   }
 
   &__image {
+    text-align: center;
     img {
-      width: 100%;
+      width: 400px;
       margin: 0 auto;
     }
   }
 
   &__live {
     border: 1px solid $primary;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     color: $primary;
     text-decoration: none;
     cursor: pointer;
@@ -78,13 +91,14 @@
 
 @media screen and (max-device-width: 812px) {
   #projects {
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    padding: 8rem 0.5rem 2rem;
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    padding: 6rem 0.5rem 2rem;
   }
 
   .projects {
     &__subtitle {
+      text-align: center;
       width: 90%;
       margin: 1rem auto 3rem;
     }
@@ -95,7 +109,7 @@
     flex-direction: column;
     margin: 1rem auto;
     justify-content: center;
-    width: 90%;
+    min-width: 100%;
   }
 
   .project {
@@ -103,6 +117,11 @@
 
     &__title {
       margin: 1rem auto;
+    }
+
+    &__tech {
+      width: 100%;
+      text-align: center;
     }
 
     &__subtitle {
@@ -113,7 +132,7 @@
 
     &__image {
       img {
-        width: 100%;
+        width: 90%;
         margin: 2rem auto;
       }
     }
