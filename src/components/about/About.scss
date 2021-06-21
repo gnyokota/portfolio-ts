@@ -62,13 +62,9 @@
 
 /* breakpoint for mobile  */
 @media screen and (max-device-width: 716px) {
-  #about {
-    padding: 5vh 0;
-  }
-
   .about {
     padding: 0 0.5rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
 
     &__info {
       display: flex;

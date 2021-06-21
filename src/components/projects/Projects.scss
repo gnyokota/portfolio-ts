@@ -5,7 +5,7 @@
   color: $background;
   -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  padding: 6rem 0.5rem;
+  padding: 6rem 0.5rem 2rem;
 }
 
 .projects {
@@ -73,5 +73,49 @@
   &__code:hover {
     color: $background;
     transition: ease-in-out 0.5s;
+  }
+}
+
+@media screen and (max-device-width: 812px) {
+  #projects {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    padding: 8rem 0.5rem 2rem;
+  }
+
+  .projects {
+    &__subtitle {
+      width: 90%;
+      margin: 1rem auto 3rem;
+    }
+  }
+
+  #project {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .project {
+    text-align: center;
+
+    &__title {
+      margin: 1rem auto;
+    }
+
+    &__subtitle {
+      width: 100%;
+      margin: 1rem 0 2rem;
+      text-align: justify;
+    }
+
+    &__image {
+      img {
+        width: 100%;
+        margin: 2rem auto;
+      }
+    }
   }
 }
