@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -43,7 +42,11 @@ const Drawer = ({ handleBackdrop }: Props) => {
           </li>
         </ul>
       </div>
-      <div className="backdrop" onClick={handleBackdrop}></div>
+      <div
+        aria-hidden="true"
+        className="backdrop"
+        onClick={handleBackdrop}
+      ></div>
     </div>
   );
 };

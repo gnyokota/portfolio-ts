@@ -7,7 +7,7 @@ import "./Navbar.scss";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleDrawerToggle = () => {
-    setIsOpen((prevState) => !prevState);
+    setIsOpen((prevState: boolean) => !prevState);
   };
 
   const handleBackdrop = () => {
@@ -43,7 +43,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div className="" onClick={handleDrawerToggle}>
+      <div aria-hidden="true" onClick={handleDrawerToggle}>
         <HiViewList className="navbar__icon" />
       </div>
       <div className="navbar__drawer">
