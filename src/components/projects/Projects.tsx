@@ -92,7 +92,7 @@ const Projects = () => {
       />
       <ProjectItem
         title={"Find your place app"}
-        tech={"React JS, TypeScript, Sass, API "}
+        tech={"React JS, React Router, CSS"}
         description={`A front-end application built from scratch with React JS and CSS for web and mobile. 
         The routes were built using react router. The app was deployed on GitHub pages.`}
         url={"https://gnyokota.github.io/website_react/"}
