@@ -39,11 +39,8 @@ const Projects = () => {
         tech={
           "React JS, React-tilt, React-particles, Node.js, Express.js, bcrypt,  PostgreSQL"
         }
-        description={`This frontend application was one of the assignments developed during the Integrify 
-          Academy bootcamp. It was built from scratch  with TypeScript. The data for the countries 
-          was fetched from an external API (REST Countries), the styling was built with Material-UI, 
-          and the state management was done with React Redux. This full-stack application was built 
-          from scratch. This is a face recognition application, in it the authentication was built 
+        description={`This full-stack application was built from scratch. This is a face recognition 
+        application, in it the authentication was built 
           with bcrypt (password-hash encryption) and the face recognition data fetched from an external 
           API (AI Face Recognition by Clarifai). The app was deployed on Heroku and the database was 
           also connected to Heroku.`}
@@ -60,6 +57,7 @@ const Projects = () => {
         description={`This front-end application was one of the assignments developed during the Integrify 
           Academy bootcamp. It was built from scratch  with TypeScript. The data for the countries 
           was fetched from an external API (REST Countries), the styling was built with Material-UI, 
+          a theme switch was created, 
           and the state management was done with React Redux.`}
         url={"https://countries-app-reduxreact.netlify.app/"}
         code={"https://github.com/gnyokota/countriesAPI_redux"}
