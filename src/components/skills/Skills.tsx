@@ -1,10 +1,10 @@
 import SkillItem from "./SkillItem";
-import { AiFillHtml5 } from "react-icons/ai";
-import { FaCss3Alt, FaReact, FaNode } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { DiMongodb } from "react-icons/di";
-import { IoLogoJavascript } from "react-icons/io";
-import { BiGitBranch } from "react-icons/bi";
+import {AiFillHtml5} from "react-icons/ai";
+import {FaCss3Alt, FaReact, FaNode} from "react-icons/fa";
+import {SiTypescript} from "react-icons/si";
+import {DiMongodb} from "react-icons/di";
+import {TbBrandKotlin} from "react-icons/tb";
+import {BiGitBranch} from "react-icons/bi";
 
 import "./Skills.scss";
 
@@ -26,9 +26,9 @@ const Skills = () => {
           icon={<FaCss3Alt />}
         />
         <SkillItem
-          linkRef={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
-          name={"JavaScript"}
-          icon={<IoLogoJavascript />}
+          linkRef={"https://kotlinlang.org/"}
+          name={"Kotlin"}
+          icon={<TbBrandKotlin />}
         />
         <SkillItem
           linkRef={"https://www.typescriptlang.org/"}
