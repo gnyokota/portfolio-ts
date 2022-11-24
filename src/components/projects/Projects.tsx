@@ -29,7 +29,6 @@ const Projects = () => {
           for admin and regular users . The front-end was built with React and Typescript. 
           For both front and back-end the CI/CD was implemented, the first was deployed on Netlify, 
           while the latter was deployed on Heroku. `}
-        url={"https://ecommerce-pantanal.netlify.app/"}
         code={"https://github.com/gnyokota/frontend-ecommerce"}
         code2={"https://github.com/gnyokota/backend-ecommerce"}
         img={project01}
@@ -44,7 +43,6 @@ const Projects = () => {
           with bcrypt (password-hash encryption) and the face recognition data fetched from an external 
           API (AI Face Recognition by Clarifai). The app was deployed on Heroku and the database was 
           also connected to Heroku.`}
-        url={"http://facerec-2021.herokuapp.com/"}
         code={"https://github.com/gnyokota/face-recognition"}
         code2={"https://github.com/gnyokota/face-recognition-backend"}
         img={project02}
@@ -74,7 +72,6 @@ const Projects = () => {
         An option to recover the password was created using SendGrid.\n
         \n PS: This App was not deployed because of the SendGrid account limitations of email/day. 
         However, it is possible to find the code for both backend and frontend in the buttons below.`}
-        url={"https://github.com/gnyokota/mern-auth"}
         code={"https://github.com/gnyokota/mern-auth"}
         img={project04}
       />

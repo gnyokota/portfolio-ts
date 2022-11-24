@@ -1,0 +1,19 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/client"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/server"
+    target-branch: master
+    schedule:
+      interval: "daily"
+    pull-request-branch-name:
+      separator: "-"
+    labels:
+      - "Dependabot"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
