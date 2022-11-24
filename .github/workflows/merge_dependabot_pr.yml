@@ -1,4 +1,4 @@
-name: Merge dependabot pr
+name: Update dependencies PR
 on: pull_request_target
 
 permissions:
