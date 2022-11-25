@@ -1,4 +1,4 @@
-name: Update dependencies PR
+name: Update dependencies
 on: pull_request_target
 
 permissions:
